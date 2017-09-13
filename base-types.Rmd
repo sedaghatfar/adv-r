@@ -21,7 +21,7 @@ is.object(1:10)
 is.object(mtcars)
 ```
 
-(This function would be better called `is.oo()` beacause it tells you if an object is a base object or a OO object.)
+(This function would be better called `is.oo()` because it tells you if an object is a base object or a OO object.)
 
 The primary attribute that distinguishes between base and OO object is the "class". Base objects do not have a class attribute:
 
@@ -108,7 +108,7 @@ is.primitive(sum)
 
 Generally, "is" functions that check if an object is a specific type are ok. "is" functions that check for a family of types are often surprising. For example, `is.atomic(NULL)` is true, and as well as checking that an object is a vector, `is.vector()` also checks that it has no attributes apart from names.
 
-Can be suprising if you don't understand which category a function belongs to.
+Can be surprising if you don't understand which category a function belongs to.
 
 *   Specific base types check for a single specific value of `typeof()`:
     `is.call()`, `is.character()`, `is.complex()`, 
@@ -121,7 +121,7 @@ Can be suprising if you don't understand which category a function belongs to.
   
 *   Combination of base types: 
 
-    * `is.atomic()` = logical, integer, double, characer, raw, and 
+    * `is.atomic()` = logical, integer, double, character, raw, and 
       (surprisingly) NULL.
       
     * `is.function()` = special, builtin, closure.
